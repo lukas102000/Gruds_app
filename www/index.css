@@ -1,0 +1,98 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    height: -webkit-fill-available;
+}
+body{
+    background-color: #0d0d0e;
+    margin: 0;
+    padding: 0;
+    height: -webkit-fill-available;
+    height: 100vh;
+    overflow: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/***** app-title ***/
+.app-title{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0e;
+}
+.app-title h1{
+    color: rgb(255, 136, 0);
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+/**** app-content **/
+.app-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.app-content::-webkit-scrollbar{width: 0;}
+/* * link **/
+.link{
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color:rgb(255, 136, 0);
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+}
+.link i{font-size: 28pt;}
+/** cards **/
+.app-card{
+    width: 90%;
+    padding: 5px;
+    background-color: #272727;
+    height: max-content;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+.app-card-content{
+    width:100%;
+    height: max-content;
+    padding: 10px;
+    display: block;
+}
+.app-card-content h1{
+    margin-bottom: 5px;
+    font-weight: 500;
+    display: block;
+    max-width: 85%;
+}
+.app-card-content p{
+    color: rgb(192, 192, 192);
+    display: block;
+    max-width: 85%;
+    height: max-content;
+}
+.links{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}

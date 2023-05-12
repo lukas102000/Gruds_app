@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./create.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../asset/icons/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <section class="modal">
+        <span>Saved</span>
+    </section>
+    <section class="top-bar">
+        <a href="../index.html" class="bi-arrow-left"></a>
+        <article> <h1>Add new item</h1></article>
+    </section>
+    <section class="app-conten">
+        <article class="create-content">
+            <span id="lastTime">Nothing changed</span>
+            <input type="text" id="title" placeholder="Title">
+            <textarea name="" id="context" placeholder="Context"></textarea>
+            <button onclick="savesItems()">SAVE ITEM</button>
+        </article>
+    </section>
+
+
+
+    <script src="../Components/db/storage.js"></script>
+    <script src="../Components/Card/Card.js"></script>
+</body>
+</html>

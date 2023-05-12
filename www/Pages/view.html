@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./create.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../asset/icons/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <article class="edit-bar">
+        <a href="../index.html" class="bi-arrow-left" style="font-size: 19pt;"></a>
+        <h1>My grud</h1>
+        <button onclick="deletItems()"> <i class="bi-trash"></i> </button>
+    </article>
+    <section class="app-conten">
+        <article class="create-content">
+            <span id="lastTimes">Nothing changed</span>
+            <input type="text" id="titles" placeholder="Title">
+            <textarea name="" id="contexts" placeholder="Context"></textarea>
+            <button onclick="updateHoçds()">SAVE ITEM</button>
+        </article>
+    </section>
+
+    
+    <script src="../Components/db/storage.js" ></script>
+    <script src="./edit.js"></script>
+</body>
+</html>

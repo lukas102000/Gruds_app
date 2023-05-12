@@ -1,0 +1,124 @@
+body{
+    height: fit-content;
+    max-width: 100%;
+    transform: scale(0px);
+}
+
+.top-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.top-bar a{
+    font-size: 20pt;
+    margin: 15px;
+}
+.top-bar h1{
+    margin-left: 20px;
+    font-size: 17pt;
+    color: rgb(255, 136, 0);
+    font-weight: 600;
+}
+
+.create-content{
+    padding-top: 0px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-content span{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: rgb(192, 192, 192);
+}
+.create-content input{
+    zoom: 0%;
+    transform: scale(0px);
+    width: 85%;
+    padding: 15px;
+    font-size: 14pt;
+    margin: 10px;
+    font-size: 18pt;
+    box-shadow:  0 0 10px black;
+    border-radius: 15px;
+}
+.create-content textarea {
+    zoom: 0%;
+    transform: scale(0px);
+    width: 85%;
+    height: 30vh;
+    padding: 15px;
+    resize: none;
+    font-size: 14pt;
+    margin: 10px;
+    box-shadow:  0 0 10px black;
+    border-radius: 10px;
+}
+.create-content button{
+    background-color: rgb(255, 136, 0);
+    padding: 12px;
+    font-weight: 600;
+    font-size: 13pt;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.modal{
+    width: 100%;
+    height: max-content;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    justify-content: center;
+    top: 20px;
+    font-size: 14pt;
+    display: none;
+    z-index: 50;
+}
+.modal span{
+    padding: 15px;
+    width: 7rem;
+    border-radius: 10px;
+    background-color: rgb(39, 82, 122);
+    box-shadow:  0 0 10px black;
+    text-align: center;
+}
+.modal.active{
+    display: flex;
+    animation: fadeIn linear 0.5s ;
+}
+@keyframes fadeIn {
+    0%{ opacity: 0%;}
+    50%{ opacity: 50%;}
+    80%{ opacity: 100%;}
+    100%{ opacity: 10%;}
+}
+
+.edit-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit-bar h1{
+    font-size: 16pt;
+    font-weight: 500;
+    color: rgb(255, 136, 0);
+}
+.edit-bar i, a{
+    font-size: 20pt;
+    margin: 15pt;
+}
+.edit-bar i{ color: red;}
+
+textarea::-webkit-scrollbar{ width: 0;}
