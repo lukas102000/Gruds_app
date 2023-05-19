@@ -21,16 +21,15 @@
             <h1>Desejas eliminar?</h1>
             <div>
                 <button onclick="openDelete()" >Não</button>
-                <button  onclick="openDelete(); deletetITLE();">Sim</button>
+                <button  onclick="openDelete(); deleteEle()();">Sim</button>
             </div>
         </article>
     </section>
     <header class="rot-bar">
         <nav> <a href="../index.html" class="bi-arrow-left"></a> </nav>
         <nav>
-            <label for="setImgae" class="bi-image"></label>
             <button onclick="openDelete()"> <i class="bi-trash-fill"></i> </button>
-            <button onclick="Saves()"> <i class="bi-save-fill"></i> </button>
+            <button onclick="SavesChanges()"> <i class="bi-save-fill"></i> </button>
         </nav>
     </header>
     <section class="nav-items">
@@ -64,20 +63,21 @@
     
 
     <section class="cards-int">
-        <input type="text" name="" id="inputTitle" onclick="custonMark(this)" placeholder="Título" onchange="autoSave()">
-        <div class="my-img">
-           <div class="img-view"><button>X</button></div>
-        </div>
-        <textarea placeholder="A:a" onclick="custonMark(this)" id="textarea" onchange="autoSave()"></textarea>
+        <small class="setDatas"></small>
+        <small class="setTime"></small>
+        <input type="text" name="" id="inputTitle" onclick="custonMark(this)" placeholder="Título" onchange="autoSave2()">
+        <img style="border-radius: 10px;margin-bottom: 10px;" class="img-vies" onclick="goToViewsImg()">
+        <textarea placeholder="A:a" onclick="custonMark(this)" id="textarea" onchange="autoSave2()"></textarea>
+        
     </section>
-    
-    
 
     <input type="file" onchange="setImages(this)" id="setImgae" accept="image/*">
-
+    <input type="hidden" id="setImg">
 
 
     <script src="../asset/js/create.js"></script>
-    <script src="../asset/js/storage.js" defer></script>
+    <script src="../asset/js/storage.js"></script>
+    <script src="../asset/js/min.js"></script>
+
 </body>
 </html>

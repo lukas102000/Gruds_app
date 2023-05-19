@@ -1,0 +1,1 @@
+viewsImgs(window.localStorage.getItem("imgs"))

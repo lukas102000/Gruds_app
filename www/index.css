@@ -1,98 +1,143 @@
 *{
-    text-decoration: none;
     margin: 0;
     padding: 0;
-    color: #fff;
-    border: 0;
     background-color: transparent;
+    border: 0;
     outline: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-html{
-    height: -webkit-fill-available;
+    color: white;
 }
 body{
-    background-color: #0d0d0e;
-    margin: 0;
-    padding: 0;
-    height: -webkit-fill-available;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
     height: 100vh;
-    overflow: hidden;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 13pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: -webkit-fill-available;
+    font-weight: normal;
 }
-
-/***** app-title ***/
-.app-title{
+body::-webkit-scrollbar{ width: 0;}
+.rot-bar{
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #0d0d0e;
-}
-.app-title h1{
-    color: rgb(255, 136, 0);
-    font-size: 20pt;
-    font-weight: 500;
-}
-
-/**** app-content **/
-.app-content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-.app-content::-webkit-scrollbar{width: 0;}
-/* * link **/
-.link{
-    width: 3.8rem;
-    height: 3.8rem;
-    background-color:rgb(255, 136, 0);
+    justify-content: space-between;
+    background-color: rgb(0, 132, 255);
     position: fixed;
+    top: 0;
+    
+}
+
+.rot-bar .nav-left h1{
+    margin: 15px;
+    color: rgb(247, 247, 247);
+}
+.rot-bar .search-bar{
+    width: max-content;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.rot-bar .search-bar input{
+    font-size: 12pt;
+    width: 80%;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+}
+.rot-bar .search-bar .bi-arrow-left{ 
+    font-size: 15pt;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+}
+.rot-bar .bi-search{
+    background-color: rgba(0, 0, 0, 0.068);
+    width: 2rem;
+    height: 2rem;
+    font-size: 15pt;
+    padding: 10px;
     border-radius: 50%;
-    bottom: 20px;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+.rot-bar .nav-left.active{ display: none;}
+.rot-bar .search-bar.active { width: 100%;}
+.rot-bar .search-bar.active { display: flex; width: 100%;}
+
+
+
+.app-container{
+    width: 100%;
+    max-height: max-content;
     display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 70px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
-    right: 15px;
 }
-.link i{font-size: 28pt;}
-/** cards **/
-.app-card{
-    width: 90%;
-    padding: 5px;
-    background-color: #272727;
+.app-container::-webkit-scrollbar{ width: 0;}
+.card-container{
+    width: 88%;
     height: max-content;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
     margin: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
 }
-.app-card-content{
-    width:100%;
-    height: max-content;
-    padding: 10px;
-    display: block;
-}
-.app-card-content h1{
-    margin-bottom: 5px;
-    font-weight: 500;
-    display: block;
-    max-width: 85%;
-}
-.app-card-content p{
-    color: rgb(192, 192, 192);
-    display: block;
-    max-width: 85%;
-    height: max-content;
-}
-.links{
+.card-container article{
     width: 100%;
     margin: 0;
     padding: 0;
+}
+.card-container img{
+    max-width: 100%;
+    max-height: 108px;
+    border-radius: 10px;
+    margin: 0;
+}
+.card-container h1{ 
+    margin: 0;
+    max-width: 100%;
+    font-size: 18pt;
+    display: block;
+    color: black;
+}
+.card-container p{ 
+    max-width: 100%;
+    display: block;
+    color: rgb(146, 146, 146);
+}
+
+.nav-button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(0, 132, 255);
+    color: white;
     display: flex;
+    align-items: center;
     justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.637);
+}
+.nav-button i{
+    font-size: 35pt;
+}
+.dates{
+    width: 90%;
+    color: black;
+    font-size: 13pt;
 }

@@ -1,0 +1,207 @@
+body{ background-color: white;}
+body::-webkit-scrollbar{ width: 0;}
+.rot-bar{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.158);
+    position: fixed;
+    top: 0;
+}
+.rot-bar a{ margin-left: 15px; font-size: 18pt;}
+.rot-bar label, i{
+    font-size: 18pt;
+    margin: 16px;
+}
+.nav-items{
+    width: 100%;
+    height:max-content;
+    padding-top: 40px;
+}
+.nav-items article{
+    width: 100%;
+    height:max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}
+.nav-items i{ color: rgb(88, 88, 88); font-size: 18pt;}
+.paletes{
+    width: 100%;
+    height: max-content;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: white;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.212);
+}
+.paletes.active{ 
+    display: flex; 
+    transition: 0.3s;
+}
+.paletes span{
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: red;
+    margin: 10px;
+    border-radius: 50%;
+}
+.cards-int{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+input{
+    width: 94%;
+    font-size: 20pt;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+textarea{
+    width: 90%;
+    height: 35vh;
+    resize: none;
+    font-size: 15pt;
+    color: rgb(77, 77, 77);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea::-webkit-scrollbar{ width: 0;}
+.my-img{
+    width: 100%;
+    display: none;
+    height: 7rem;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 50pt;
+}
+input[type="file"]{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.my-img div{
+    width: 10rem;
+    height: 7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+    display: flex;
+}
+.my-img div button{
+    width: 2rem;
+    height: 1.5rem;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+.disable{ display: none;}
+
+.modal{
+    width: 100%;
+    height: max-content;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+}
+.modal h1{
+    padding: 10px;
+    width: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12pt;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.377);
+}
+.setDatas, .setTime{ 
+    width: 95%;
+    color: gray;
+    text-align: end;
+    font-size: 12pt;
+}
+.img-vies{ 
+    max-width: 100%;
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+.modal-alert{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.185);
+    z-index: 150;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-alert.active{ display: flex;}
+.modal-alert article{
+    width: 70%;
+    max-width: 70%;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    color: black;
+}
+.modal-alert article h1{ color: black; height: 4rem;}
+.modal-alert article button{
+    padding: 15px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 12pt;
+    margin: 10px;
+}
+.modal-alert article div{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.views{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.views::-webkit-scrollbar{ width: 0;}
+.views div{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.082);
+    display: flex;
+    top: 0;
+    align-items: center;
+}
+.views div a{ margin-left: 15px;}
+.views article{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    scroll-snap-align: start;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

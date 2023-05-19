@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./asset/icons/bootstrap-icons/bootstrap-icons.css">
+
+    <script src="./asset/js/storage.js" ></script>
 </head>
 <body>
-    <section class="app-title"> <img src="./img/logo.png" height="40"> <h1>My Crud</h1> </section>
-    <section class="app-content"></section>
+    <header class="rot-bar">
+        <nav class="nav-left"> <h1>My Notes </h1> </nav>
+        <div class="search-bar">
+            <button onclick="openSearchBar()"> <i class="bi-arrow-left"></i> </button>
+            <input type="text" class="searsh-input" onkeyup="searchItem(this)" placeholder="Search...">
+        </div>
+        <button onclick="openSearchBar()"> <i class="bi-search"></i> </button>
+    </header>
+    
+    <section class="app-container"> </section>
 
-    <a href="./Pages/create.html" class="link"> <i class="bi-plus"></i></a>
+    <a href="./Pages/create.html " class="nav-button">
+        <i class="bi-plus"></i>
+    </a>
 
 
 
 
+    
+    <script src="./main.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./Components/db/storage.js"></script>
-    <script src="./Components/Card/Card.js"></script>
-
-    <script>
-        let box = document.querySelector('body')
-        document.querySelector('.app-content').style.height = box.clientHeight-100+'px'
-    </script>
 </body>
 </html>
